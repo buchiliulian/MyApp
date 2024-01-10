@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chat_background"
+    tools:context=".dongtai.PublishActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+
+    <android.widget.Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:background="@drawable/qq_btn"
+        android:padding="8dp" />
+    <android.widget.Button
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发表"
+        android:textSize="20dp"
+        android:layout_marginLeft="230dp"
+        android:background="@drawable/fabiao"
+        android:padding="8dp" />
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/etPostText"
+        android:layout_width="match_parent"
+        android:layout_height="272dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top|left"
+        android:hint="请输入动态内容"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+    <ImageView
+        android:id="@+id/ivSelectedPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <android.widget.Button
+            android:id="@+id/btnAddPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加图片"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:background="@drawable/addphoto"
+            android:padding="8dp" />
+        <android.widget.Button
+            android:id="@+id/btnAddBiaoqian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加标签"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:background="@drawable/addphoto"
+            android:padding="8dp" />
+        <android.widget.Button
+            android:id="@+id/btnAddPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加地点"
+            android:textSize="15dp"
+            android:textStyle="italic"
+            android:background="@drawable/addphoto"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

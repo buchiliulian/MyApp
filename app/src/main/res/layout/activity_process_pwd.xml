@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".processPwd">
+
+
+
+    <TextView
+        android:id="@+id/textView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入用户名："
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textColor="#030303" />
+    <!--输入框-->
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="用   户   名"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入验证手机号："
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#030303" />
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="手   机   号"
+        android:textStyle="bold" />
+    <android.widget.Button
+        android:id="@+id/buttonSendVerificationCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_phone"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_send"
+        android:text="发送验证码" />
+    <TextView
+        android:id="@+id/textView_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入新密码："
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#030303" />
+
+    <EditText
+        android:id="@+id/editText_newdpwd1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="新   密   码"
+        android:inputType="textPassword"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="再次输入新密码："
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="#030303" />
+    <EditText
+        android:id="@+id/editText_newdpwd2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="新   密   码"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".processPwd">
+
+        <android.widget.Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/btn_send"
+            android:textSize="30sp"/>
+        <android.widget.Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:background="@drawable/btn_send"
+            android:layout_marginLeft="75dp"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

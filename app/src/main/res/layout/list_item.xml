@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_background"
+    android:id="@+id/item_layout"
+    android:layout_margin="5dp"
+    android:clickable="true">
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ImageView>
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="内容"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textColor="#000000">
+    </TextView>
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:textStyle="italic"
+        android:layout_gravity="bottom|center">
+    </TextView>
+
+</LinearLayout>
